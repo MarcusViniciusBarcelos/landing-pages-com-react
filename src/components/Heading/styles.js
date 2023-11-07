@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
 
 export const Title = styled.h1`
-${({ theme }) => css`
-  color: ${theme.colors.mainBg};`}`;
+${({ theme, light }) => css`
+  color: ${light ? theme.colors.white : theme.colors.primaryColor};`}`;
