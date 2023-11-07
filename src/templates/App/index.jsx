@@ -1,10 +1,11 @@
+import { Heading } from '../../components/Heading';
 import * as Styled from './styles';
 
 export function Home() {
   return (
     <div className="Home">
       <Styled.Wrapper>
-        <h1>hello</h1>
+        <Heading>React Avançado</Heading>
       </Styled.Wrapper>
     </div>
   );
