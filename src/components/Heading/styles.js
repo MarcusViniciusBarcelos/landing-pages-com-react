@@ -15,6 +15,12 @@ const titleSize = {
   `,
 };
 
+const mediaFont = (theme) => css`
+  @media ${theme.media.lteMedium} {
+    font-size: ${theme.font.sizes.xlarge};
+  }
+`;
+
 const titleCase = (uppercase) => css`
   text-transform: ${uppercase ? 'uppercase' : 'none'};
 `;
@@ -24,4 +30,5 @@ ${({ theme, colorDark, size, uppercase }) => css`
   color: ${colorDark ? theme.colors.primaryColor : theme.colors.white};
   ${titleSize[size](theme)};
   ${titleCase(uppercase)};
+  ${mediaFont(theme)};
 `}`;
