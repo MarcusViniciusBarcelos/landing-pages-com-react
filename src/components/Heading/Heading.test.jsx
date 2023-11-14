@@ -80,7 +80,7 @@ describe('<Heading />', () => {
   });
 
   it('should render with uppercase letters', () => {
-    renderTheme(<Heading uppercase>Children</Heading>);
+    renderTheme(<Heading uppercase={true}>Children</Heading>);
     const heading = screen.getByRole('heading', { name: 'Children' });
     expect(heading).toHaveStyle({
       'text-transform': 'uppercase',
