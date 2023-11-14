@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavLinks should match snapshot 1`] = `
+.c0 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.c1 {
+  display: block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  color: #0A1128;
+  position: relative;
+}
+
+.c1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0.76rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background-color: #DC143C;
+  transition: all 0.3s ease-in-out;
+}
+
+.c1:hover::after {
+  left: 25%;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .c0 {
+    flex-flow: column wrap;
+    align-content: center;
+  }
+}
+
+<nav
+  class="c0"
+>
+  <a
+    class="c1"
+    href="#target1"
+    target="_self"
+  >
+    Link 1
+  </a>
+  <a
+    class="c1"
+    href="#target2"
+    target="_self"
+  >
+    Link 2
+  </a>
+  <a
+    class="c1"
+    href="#target3"
+    target="_self"
+  >
+    Link 3
+  </a>
+  <a
+    class="c1"
+    href="#target4"
+    target="_self"
+  >
+    Link 4
+  </a>
+  <a
+    class="c1"
+    href="#target5"
+    target="_self"
+  >
+    Link 5
+  </a>
+  <a
+    class="c1"
+    href="#target6"
+    target="_self"
+  >
+    Link 6
+  </a>
+  <a
+    class="c1"
+    href="#target7"
+    target="_self"
+  >
+    Link 7
+  </a>
+  <a
+    class="c1"
+    href="#target8"
+    target="_self"
+  >
+    Link 8
+  </a>
+  <a
+    class="c1"
+    href="#target9"
+    target="_self"
+  >
+    Link 9
+  </a>
+  <a
+    class="c1"
+    href="#target10"
+    target="_self"
+  >
+    Link 10
+  </a>
+  <a
+    class="c1"
+    href="#target11"
+    target="_self"
+  >
+    Link 11
+  </a>
+  <a
+    class="c1"
+    href="#target12"
+    target="_self"
+  >
+    Link 12
+  </a>
+  <a
+    class="c1"
+    href="#target13"
+    target="_self"
+  >
+    Link 13
+  </a>
+  <a
+    class="c1"
+    href="#target14"
+    target="_self"
+  >
+    Link 14
+  </a>
+  <a
+    class="c1"
+    href="#target15"
+    target="_self"
+  >
+    Link 15
+  </a>
+  <a
+    class="c1"
+    href="#target16"
+    target="_self"
+  >
+    Link 16
+  </a>
+  <a
+    class="c1"
+    href="#target17"
+    target="_self"
+  >
+    Link 17
+  </a>
+  <a
+    class="c1"
+    href="#target18"
+    target="_self"
+  >
+    Link 18
+  </a>
+  <a
+    class="c1"
+    href="#target19"
+    target="_self"
+  >
+    Link 19
+  </a>
+  <a
+    class="c1"
+    href="#target20"
+    target="_self"
+  >
+    Link 20
+  </a>
+  <a
+    class="c1"
+    href="#target21"
+    target="_self"
+  >
+    Link 21
+  </a>
+  <a
+    class="c1"
+    href="#target22"
+    target="_self"
+  >
+    Link 22
+  </a>
+  <a
+    class="c1"
+    href="#target23"
+    target="_self"
+  >
+    Link 23
+  </a>
+  <a
+    class="c1"
+    href="#target24"
+    target="_self"
+  >
+    Link 24
+  </a>
+  <a
+    class="c1"
+    href="#target25"
+    target="_self"
+  >
+    Link 25
+  </a>
+  <a
+    class="c1"
+    href="#target26"
+    target="_self"
+  >
+    Link 26
+  </a>
+</nav>
+`;
