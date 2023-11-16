@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@styled-icons/material-outlined": "^10.47.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -68,6 +69,9 @@
       "!<rootDir>/src/styles/*.{js,jsx,ts,tsx}",
       "!<rootDir>/**/stories.{js,jsx,ts,tsx}",
       "!<rootDir>/node_modules/"
-    ]
+    ],
+    "setupFilesAfterEnv": ["<rootDir>/path-to-your-setup-file.js"],
+    "testEnvironment": "jsdom",
+    "snapshotSerializers": ["jest-styled-components/serializer"]
   }
 }

@@ -3,6 +3,7 @@ export const theme = {
     primaryColor: '#0A1128',
     secondaryColor: '#DC143C',
     white: '#FFFFFF',
+    mediumGray: '#DDDDDD',
   },
   font: {
     family: {
@@ -21,7 +22,7 @@ export const theme = {
     },
   },
   media: {
-    lteMedium: '(max-width: 768px)',
+    lteMedium: '(max-width:768px)',
   },
   spacings: {
     xsmall: '0.8rem',

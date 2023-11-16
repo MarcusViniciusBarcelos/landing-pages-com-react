@@ -18,7 +18,7 @@ exports[`LogoLink should match snapshot 1`] = `
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .c0 {
     font-size: 4.0rem;
   }
