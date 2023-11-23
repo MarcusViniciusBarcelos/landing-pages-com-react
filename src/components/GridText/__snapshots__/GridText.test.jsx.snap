@@ -26,7 +26,7 @@ exports[`GridText should render with background 1`] = `
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 3.2rem;
-  margin-top: 3.2rem;
+  margin-top: 5.6rem;
 }
 
 .c8 .c3 {
@@ -168,7 +168,7 @@ exports[`GridText should render without background 1`] = `
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 3.2rem;
-  margin-top: 3.2rem;
+  margin-top: 5.6rem;
 }
 
 .c8 .c3 {

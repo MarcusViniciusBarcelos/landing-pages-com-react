@@ -16,7 +16,7 @@ describe('<Heading />', () => {
   });
 
   it('should render with white color', () => {
-    renderTheme(<Heading colorDark={false}>Children</Heading>);
+    renderTheme(<Heading colordark={false}>Children</Heading>);
     const heading = screen.getByRole('heading', { name: 'Children' });
     expect(heading).toHaveStyle({
       color: theme.colors.white,
@@ -80,7 +80,7 @@ describe('<Heading />', () => {
   });
 
   it('should render with uppercase letters', () => {
-    renderTheme(<Heading uppercase={true}>Children</Heading>);
+    renderTheme(<Heading uppercase="true">Children</Heading>);
     const heading = screen.getByRole('heading', { name: 'Children' });
     expect(heading).toHaveStyle({
       'text-transform': 'uppercase',

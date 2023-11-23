@@ -1,270 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Menu should not render links 1`] = `
-.c4 {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 3.2rem;
-}
-
-.c7 {
-  color: #0A1128;
-  font-size: 2.4rem;
-  text-transform: uppercase;
-}
-
-.c2 {
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-bottom: #DDDDDD;
-  background: #FFFFFF;
-  transition: all 300ms ease-in-out;
-}
-
-.c2 >.c3 {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.c2 .c6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.c5 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.c0 {
-  z-index: 6;
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  width: 4rem;
-  height: 4rem;
-  background: #0A1128;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0.4rem;
-  display: none;
-  pointer-events: all;
-}
-
-.c0 >svg {
-  width: 3rem;
-  height: 3rem;
-}
-
-.c8 {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-}
-
-.c8 img {
-  max-height: 3rem;
-}
-
-.c9 {
-  display: flex;
-  flex-flow: row wrap;
-}
-
+exports[`<Menu /> should match snapshot on mobile 1`] = `
 .c1 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
 }
 
-@media (max-width:768px) {
-  .c7 {
-    font-size: 4.0rem;
-  }
-}
-
-@media (max-width:768px) {
-  .c2 {
-    height: 100vh;
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  .c2 >.c3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 100vh;
-    align-items: center;
-    overflow-y: auto;
-  }
-
-  .c2 .c6 {
-    padding-bottom: 3.2rem;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media (max-width:768px) {
-  .c5 {
-    display: block;
-    text-align: center;
-    padding: 4.8rem 0;
-  }
-}
-
-@media (max-width:768px) {
-  .c0 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media (max-width:768px) {
-  .c9 {
-    flex-flow: column wrap;
-    align-content: center;
-  }
-}
-
-<div>
-  <button
-    aria-label="Open/Close menu"
-    class="c0"
-  >
-    <svg
-      aria-hidden="true"
-      aria-label="Open menu"
-      class="c1"
-      fill="currentColor"
-      focusable="false"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-      />
-    </svg>
-  </button>
-  <div
-    class="c2"
-  >
-    <div
-      class="c3 c4"
-    >
-      <div
-        class="c5"
-      >
-        <h1
-          class="c6 c7"
-        >
-          <a
-            class="c8"
-            href="#target"
-          >
-            Logo
-          </a>
-        </h1>
-        <nav
-          aria-label="Main menu"
-          class="c9"
-        />
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Menu should render Logo and Main Menu Nav 1`] = `
-.c4 {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 3.2rem;
-}
-
-.c7 {
-  color: #0A1128;
-  font-size: 2.4rem;
-  text-transform: uppercase;
-}
-
 .c2 {
   position: fixed;
   z-index: 5;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-bottom: #DDDDDD;
-  background: #FFFFFF;
   transition: all 300ms ease-in-out;
 }
 
-.c2 >.c3 {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.c2 .c6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.c5 {
+.c3 {
+  background: #FFFFFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 0.1rem solid #DDDDDD;
 }
 
 .c0 {
-  z-index: 6;
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  width: 4rem;
-  height: 4rem;
   background: #0A1128;
   color: #FFFFFF;
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  z-index: 6;
   border: none;
-  border-radius: 0.4rem;
+  top: 2rem;
+  right: 2rem;
   display: none;
   pointer-events: all;
 }
 
 .c0 >svg {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
-.c8 {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-}
-
-.c8 img {
-  max-height: 3rem;
-}
-
-.c9 {
+.c6 {
   display: flex;
   flex-flow: row wrap;
 }
 
-.c10 {
+.c7 {
   display: block;
   text-decoration: none;
   font-size: 1.6rem;
@@ -273,7 +57,7 @@ exports[`Menu should render Logo and Main Menu Nav 1`] = `
   position: relative;
 }
 
-.c10::after {
+.c7::after {
   content: '';
   display: block;
   position: absolute;
@@ -285,21 +69,30 @@ exports[`Menu should render Logo and Main Menu Nav 1`] = `
   transition: all 0.3s ease-in-out;
 }
 
-.c10:hover::after {
+.c7:hover::after {
   left: 25%;
   width: 50%;
 }
 
-.c1 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
+.c5 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c5 img {
+  max-height: 3rem;
+}
+
+.c4 {
+  color: #0A1128;
+  font-size: 2.4rem;
+  text-transform: uppercase;
 }
 
 @media (max-width:768px) {
-  .c7 {
-    font-size: 4.0rem;
-  }
+
 }
 
 @media (max-width:768px) {
@@ -308,49 +101,51 @@ exports[`Menu should render Logo and Main Menu Nav 1`] = `
     visibility: hidden;
     opacity: 0;
   }
+}
 
-  .c2 >.c3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 100vh;
+@media (max-width:768px) {
+  .c3 {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
     align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    height: 100%;
     overflow-y: auto;
-  }
-
-  .c2 .c6 {
-    padding-bottom: 3.2rem;
-    display: flex;
-    justify-content: center;
+    padding: 4.8rem 0;
+    cursor: pointer;
   }
 }
 
 @media (max-width:768px) {
-  .c5 {
-    display: block;
-    text-align: center;
-    padding: 4.8rem 0;
-  }
+
 }
 
 @media (max-width:768px) {
   .c0 {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 }
 
 @media (max-width:768px) {
-  .c9 {
+  .c6 {
     flex-flow: column wrap;
     align-content: center;
   }
 }
 
+@media (max-width:768px) {
+  .c4 {
+    font-size: 4.0rem;
+  }
+}
+
 <div>
   <button
-    aria-label="Open/Close menu"
+    aria-hidden="false"
+    aria-label="Open/Close Menu"
     class="c0"
   >
     <svg
@@ -368,212 +163,300 @@ exports[`Menu should render Logo and Main Menu Nav 1`] = `
     </svg>
   </button>
   <div
+    aria-hidden="true"
     class="c2"
   >
     <div
-      class="c3 c4"
+      class="c3"
     >
-      <div
-        class="c5"
+      <h1
+        class="c4"
       >
-        <h1
-          class="c6 c7"
+        <a
+          class="c5"
+          href="#target"
         >
-          <a
-            class="c8"
-            href="#target"
-          >
-            Logo
-          </a>
-        </h1>
-        <nav
-          aria-label="Main menu"
-          class="c9"
+          <img
+            alt="Logo"
+            src="image.jpg"
+          />
+        </a>
+      </h1>
+      <nav
+        aria-label="Main menu"
+        class="c6"
+      >
+        <a
+          class="c7"
+          href="#target1"
+          target="_self"
         >
-          <a
-            class="c10"
-            href="#target1"
-            target="_self"
-          >
-            Link 1
-          </a>
-          <a
-            class="c10"
-            href="#target2"
-            target="_self"
-          >
-            Link 2
-          </a>
-          <a
-            class="c10"
-            href="#target3"
-            target="_self"
-          >
-            Link 3
-          </a>
-          <a
-            class="c10"
-            href="#target4"
-            target="_self"
-          >
-            Link 4
-          </a>
-          <a
-            class="c10"
-            href="#target5"
-            target="_self"
-          >
-            Link 5
-          </a>
-          <a
-            class="c10"
-            href="#target6"
-            target="_self"
-          >
-            Link 6
-          </a>
-          <a
-            class="c10"
-            href="#target7"
-            target="_self"
-          >
-            Link 7
-          </a>
-          <a
-            class="c10"
-            href="#target8"
-            target="_self"
-          >
-            Link 8
-          </a>
-          <a
-            class="c10"
-            href="#target9"
-            target="_self"
-          >
-            Link 9
-          </a>
-          <a
-            class="c10"
-            href="#target10"
-            target="_self"
-          >
-            Link 10
-          </a>
-          <a
-            class="c10"
-            href="#target11"
-            target="_self"
-          >
-            Link 11
-          </a>
-          <a
-            class="c10"
-            href="#target12"
-            target="_self"
-          >
-            Link 12
-          </a>
-          <a
-            class="c10"
-            href="#target13"
-            target="_self"
-          >
-            Link 13
-          </a>
-          <a
-            class="c10"
-            href="#target14"
-            target="_self"
-          >
-            Link 14
-          </a>
-          <a
-            class="c10"
-            href="#target15"
-            target="_self"
-          >
-            Link 15
-          </a>
-          <a
-            class="c10"
-            href="#target16"
-            target="_self"
-          >
-            Link 16
-          </a>
-          <a
-            class="c10"
-            href="#target17"
-            target="_self"
-          >
-            Link 17
-          </a>
-          <a
-            class="c10"
-            href="#target18"
-            target="_self"
-          >
-            Link 18
-          </a>
-          <a
-            class="c10"
-            href="#target19"
-            target="_self"
-          >
-            Link 19
-          </a>
-          <a
-            class="c10"
-            href="#target20"
-            target="_self"
-          >
-            Link 20
-          </a>
-          <a
-            class="c10"
-            href="#target21"
-            target="_self"
-          >
-            Link 21
-          </a>
-          <a
-            class="c10"
-            href="#target22"
-            target="_self"
-          >
-            Link 22
-          </a>
-          <a
-            class="c10"
-            href="#target23"
-            target="_self"
-          >
-            Link 23
-          </a>
-          <a
-            class="c10"
-            href="#target24"
-            target="_self"
-          >
-            Link 24
-          </a>
-          <a
-            class="c10"
-            href="#target25"
-            target="_self"
-          >
-            Link 25
-          </a>
-          <a
-            class="c10"
-            href="#target26"
-            target="_self"
-          >
-            Link 26
-          </a>
-        </nav>
-      </div>
+          Link 1
+        </a>
+        <a
+          class="c7"
+          href="#target2"
+          target="_self"
+        >
+          Link 2
+        </a>
+        <a
+          class="c7"
+          href="#target3"
+          target="_self"
+        >
+          Link 3
+        </a>
+        <a
+          class="c7"
+          href="#target4"
+          target="_self"
+        >
+          Link 4
+        </a>
+        <a
+          class="c7"
+          href="#target5"
+          target="_self"
+        >
+          Link 5
+        </a>
+        <a
+          class="c7"
+          href="#target6"
+          target="_self"
+        >
+          Link 6
+        </a>
+      </nav>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Menu /> should render menu on desktop 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.c3 {
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1rem solid #DDDDDD;
+}
+
+.c0 {
+  background: #0A1128;
+  color: #FFFFFF;
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  z-index: 6;
+  border: none;
+  top: 2rem;
+  right: 2rem;
+  display: none;
+  pointer-events: none;
+}
+
+.c0 >svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.c6 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.c7 {
+  display: block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  color: #0A1128;
+  position: relative;
+}
+
+.c7::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0.76rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background-color: #DC143C;
+  transition: all 0.3s ease-in-out;
+}
+
+.c7:hover::after {
+  left: 25%;
+  width: 50%;
+}
+
+.c5 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c5 img {
+  max-height: 3rem;
+}
+
+.c4 {
+  color: #0A1128;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+@media (max-width:768px) {
+  .c2 {
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media (max-width:768px) {
+  .c3 {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    height: 100%;
+    overflow-y: auto;
+    padding: 4.8rem 0;
+    cursor: pointer;
+  }
+}
+
+@media (max-width:768px) {
+  .c0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width:768px) {
+  .c6 {
+    flex-flow: column wrap;
+    align-content: center;
+  }
+}
+
+@media (max-width:768px) {
+  .c4 {
+    font-size: 4.0rem;
+  }
+}
+
+<div>
+  <button
+    aria-hidden="true"
+    aria-label="Open/Close Menu"
+    class="c0"
+  >
+    <svg
+      aria-hidden="true"
+      aria-label="Close menu"
+      class="c1"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+      />
+    </svg>
+  </button>
+  <div
+    aria-hidden="false"
+    class="c2"
+  >
+    <div
+      class="c3"
+    >
+      <h1
+        class="c4"
+      >
+        <a
+          class="c5"
+          href="#target"
+        >
+          <img
+            alt="Logo"
+            src="image.jpg"
+          />
+        </a>
+      </h1>
+      <nav
+        aria-label="Main menu"
+        class="c6"
+      >
+        <a
+          class="c7"
+          href="#target1"
+          target="_self"
+        >
+          Link 1
+        </a>
+        <a
+          class="c7"
+          href="#target2"
+          target="_self"
+        >
+          Link 2
+        </a>
+        <a
+          class="c7"
+          href="#target3"
+          target="_self"
+        >
+          Link 3
+        </a>
+        <a
+          class="c7"
+          href="#target4"
+          target="_self"
+        >
+          Link 4
+        </a>
+        <a
+          class="c7"
+          href="#target5"
+          target="_self"
+        >
+          Link 5
+        </a>
+        <a
+          class="c7"
+          href="#target6"
+          target="_self"
+        >
+          Link 6
+        </a>
+      </nav>
     </div>
   </div>
 </div>
