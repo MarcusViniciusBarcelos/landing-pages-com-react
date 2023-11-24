@@ -4,7 +4,7 @@ export default {
   title: 'Footer',
   component: Footer,
   args: {
-    html: `<p><a href="https://beacons.ai/marcusbarcelos">Feito com ❤ por Marcus Barcelos</a></p>`,
+    footerHtml: `<p><a href="https://beacons.ai/marcusbarcelos">Feito com ❤ por Marcus Barcelos</a></p>`,
   },
 };
 
