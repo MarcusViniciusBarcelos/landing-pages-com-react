@@ -35,13 +35,13 @@ export const mapSectionContent = (section = {}) => {
   const {
     __component: component = '',
     title = '',
-    content = '',
-    metadata: { background = false, section_id: sectionId = '' },
+    content: html = '',
+    metadata: { background = false, section_id: sectionId = '' } = false,
   } = section;
   return {
     component,
     title,
-    content,
+    html,
     background,
     sectionId,
   };

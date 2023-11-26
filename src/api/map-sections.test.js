@@ -1,4 +1,8 @@
-import { mapSectionTwoColumns, mapSections } from './map-sections';
+import {
+  mapSectionContent,
+  mapSectionTwoColumns,
+  mapSections,
+} from './map-sections';
 
 describe('map-sections', () => {
   it('should render predefined sextion if no data', () => {
@@ -95,5 +99,38 @@ describe('map-sections', () => {
     expect(section.srcImg).toBe('');
     expect(section.background).toBe(true);
     expect(section.sectionId).toBe('homes');
+  });
+
+  it('should map section content with no data', () => {
+    const section = mapSectionContent();
+    expect(section.component).toBe('');
+    expect(section.title).toBe('');
+    expect(section.html).toBe('');
+    expect(section.background).toBe(false);
+    expect(section.sectionId).toBe('');
+  });
+
+  it('should map section content', () => {
+    const section = mapSectionContent({
+      id: 2,
+      __component: 'section.section-content',
+      title: 'CONTEÚDO',
+      content:
+        '<p>Meu modelo de estudo de landing page em html e css, para estudo de sintaxe e semantica</p>',
+      metadata: {
+        id: 2,
+        name: 'intro',
+        section_id: 'intro',
+        background: false,
+        __v: 0,
+      },
+    });
+    expect(section.component).toBe('section.section-content');
+    expect(section.title).toBe('CONTEÚDO');
+    expect(section.html).toBe(
+      '<p>Meu modelo de estudo de landing page em html e css, para estudo de sintaxe e semantica</p>',
+    );
+    expect(section.background).toBe(false);
+    expect(section.sectionId).toBe('intro');
   });
 });
