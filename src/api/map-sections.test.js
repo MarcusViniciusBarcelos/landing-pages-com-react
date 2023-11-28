@@ -2,6 +2,7 @@ import {
   mapSectionContent,
   mapSectionTwoColumns,
   mapSections,
+  mapTextGrid,
 } from './map-sections';
 
 describe('map-sections', () => {
@@ -10,7 +11,7 @@ describe('map-sections', () => {
     expect(sections).toEqual([]);
   });
 
-  it('should map section two columns', () => {
+  it('should map section two columns with no data', () => {
     const section = mapSectionTwoColumns();
     expect(section.component).toBe('');
     expect(section.title).toBe('');
@@ -133,4 +134,51 @@ describe('map-sections', () => {
     expect(section.background).toBe(false);
     expect(section.sectionId).toBe('intro');
   });
+});
+
+it('should map section grid text', () => {
+  const section = mapTextGrid({
+    id: 3,
+    __component: 'section.section-grid',
+    title: 'GALERIA',
+    description: 'Meu modelo de estudo de landing page em html e css',
+    text_grid: [
+      {
+        title: 'Teste 1',
+        description: 'Teste 1',
+      },
+      {
+        title: 'Teste 2',
+        description: 'Teste 2',
+      },
+    ],
+    metadata: {
+      id: 3,
+      name: 'grid-one',
+      section_id: 'grid-one',
+      background: false,
+      __v: 0,
+    },
+  });
+  expect(section.component).toBe('section.section-grid');
+  expect(section.title).toBe('GALERIA');
+  expect(section.description).toBe(
+    'Meu modelo de estudo de landing page em html e css',
+  );
+  expect(section.background).toBe(false);
+  expect(section.sectionId).toBe('grid-one');
+  expect(section.grid[0].title).toBe('Teste 1');
+  expect(section.grid[0].description).toBe('Teste 1');
+  expect(section.grid[1].title).toBe('Teste 2');
+  expect(section.grid[1].description).toBe('Teste 2');
+});
+
+it('should map section grid text with no data', () => {
+  const section = mapTextGrid(undefined);
+  expect(section.component).toBe('');
+  expect(section.title).toBe('');
+  expect(section.description).toBe('');
+  expect(section.background).toBe(false);
+  expect(section.sectionId).toBe('');
+  expect(section.grid.length).toBe(0);
 });
