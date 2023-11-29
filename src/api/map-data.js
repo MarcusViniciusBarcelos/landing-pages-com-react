@@ -10,6 +10,7 @@ export const mapData = (pagesData = [{}]) => {
       sections = [],
       menu = {},
     } = data;
+
     return {
       footerHtml,
       slug,
