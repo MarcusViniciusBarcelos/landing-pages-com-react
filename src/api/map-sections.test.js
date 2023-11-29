@@ -19,6 +19,17 @@ describe('map-sections', () => {
     expect(data[0].component).toBe('section.section-two-columns');
   });
 
+  it('should test section with invalid data (case 1)', () => {
+    const withNoTextOrImageGrid = mapSections([
+      {
+        __component: 'section.section-grid',
+        text_grid: [],
+      },
+    ]);
+
+    const withNoComponent = mapSections([{}]);
+  });
+
   it('should map section two columns with no data', () => {
     const section = mapSectionTwoColumns();
     expect(section.component).toBe('');

@@ -1,4 +1,9 @@
 export const mapSections = (sections = []) => {
+  if (!Array.isArray(sections)) {
+    console.error('Invalid input: sections must be an array');
+    return [];
+  }
+
   return sections.map((section) => {
     if (section.__component === 'section.section-two-columns') {
       return mapSectionTwoColumns(section);
