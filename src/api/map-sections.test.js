@@ -6,10 +6,17 @@ import {
   mapTextGrid,
 } from './map-sections';
 
+import pagesFakeData from './dados.json';
+
 describe('map-sections', () => {
-  it('should render predefined sextion if no data', () => {
+  it('should render predefined section if no data', () => {
     const sections = mapSections();
     expect(sections).toEqual([]);
+  });
+
+  it('should render sections if correct data', () => {
+    const data = mapSections(pagesFakeData.data.attributes.sections);
+    expect(data[0].component).toBe('section.section-two-columns');
   });
 
   it('should map section two columns with no data', () => {
