@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Base } from '../Base';
 import { mockBase } from '../Base/mock';
 import { mapData } from '../../api/map-data';
@@ -12,12 +13,15 @@ import { GridImage } from '../../components/GridImage';
 
 function Home() {
   const [data, setData] = useState([]);
+  const location = useLocation();
 
   useEffect(() => {
+    const pathname = location.pathname.replace(/[^a-z0-9-_]/gi, '');
+    const id = pathname ? pathname : 1;
     const load = async () => {
       try {
         const apiData = await fetch(
-          'http://localhost:1337/api/pages/1?populate=deep',
+          `http://localhost:1337/api/pages/${id}?populate=deep`,
         );
         const data = await apiData.json();
         const json = Object.values(data);
@@ -31,7 +35,7 @@ function Home() {
     };
 
     load();
-  }, []);
+  }, [location]);
 
   if (data === undefined) {
     return <PageNotFound />;

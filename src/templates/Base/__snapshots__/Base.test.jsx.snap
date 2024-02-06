@@ -331,10 +331,7 @@ exports[`Base should render 1`] = `
       >
         <a
           class="c6"
-          href="#"
-        >
-          Logo
-        </a>
+        />
       </h1>
       <nav
         aria-label="Main menu"
@@ -390,7 +387,7 @@ exports[`Base should render 1`] = `
   >
     <div
       class="c10"
-      id="id-937.5409339594394"
+      id=""
     >
       <div
         class="c11 c12"
@@ -459,7 +456,7 @@ exports[`Base should render 1`] = `
     </div>
     <div
       class="c20"
-      id="id-421.20573024327524"
+      id=""
     >
       <div
         class="c11 c12"
@@ -528,7 +525,7 @@ exports[`Base should render 1`] = `
     </div>
     <div
       class="c10"
-      id="id-783.8197143258303"
+      id=""
     >
       <div
         class="c11 c12"
@@ -597,7 +594,7 @@ exports[`Base should render 1`] = `
     </div>
     <div
       class="c20"
-      id="id-591.7088035605556"
+      id=""
     >
       <div
         class="c11 c12"
@@ -666,7 +663,7 @@ exports[`Base should render 1`] = `
     </div>
     <div
       class="c10"
-      id="id-318.9231224652012"
+      id=""
     >
       <div
         class="c11 c12"

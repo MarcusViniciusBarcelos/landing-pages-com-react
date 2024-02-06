@@ -21,7 +21,7 @@ exports[`<SectionBackground /> should render with background dark 1`] = `
 <div>
   <div
     class="c0"
-    id="id-748.4846465653956"
+    id=""
   >
     <div
       class="c1"
@@ -53,7 +53,7 @@ exports[`<SectionBackground /> should render with background light 1`] = `
 <div>
   <div
     class="c0"
-    id="id-533.877777488807"
+    id=""
   >
     <div
       class="c1"

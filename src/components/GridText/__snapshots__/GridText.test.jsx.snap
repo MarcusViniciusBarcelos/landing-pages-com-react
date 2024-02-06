@@ -80,7 +80,7 @@ exports[`GridText should render with background 1`] = `
 <div>
   <div
     class="c0"
-    id="id-8.640966474780187"
+    id=""
   >
     <div
       class="c1"
@@ -230,7 +230,7 @@ exports[`GridText should render without background 1`] = `
 <div>
   <div
     class="c0"
-    id="id-399.21932258283954"
+    id=""
   >
     <div
       class="c1"

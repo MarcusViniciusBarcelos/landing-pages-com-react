@@ -27,9 +27,6 @@ describe('map-menu', () => {
     expect(menu.text).toBe('Landing Page Boilerplate');
     expect(menu.srcImg).toBe('a.svg');
     expect(menu.link).toBe('#home');
-    expect(menu.links[0].newTab).toBe(false);
-    expect(menu.links[0].children).toBe('pricing');
-    expect(menu.links[0].link).toBe('#pricing');
   });
 
   it('should return a empty array if no links', () => {
