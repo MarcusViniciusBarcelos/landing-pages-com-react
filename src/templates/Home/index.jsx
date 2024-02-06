@@ -41,10 +41,10 @@ function Home() {
     return <Loading />;
   }
   const { menu, sections, footerHtml, slug } = data;
-  const { links, logoData } = menu;
+  const { menu_links, logo } = menu;
 
   return (
-    <Base links={links} logoData={logoData} footerHtml={footerHtml}>
+    <Base links={menu_links} logoData={logo} footerHtml={footerHtml}>
       {sections.map((section, index) => {
         const { component } = section;
         const key = `${slug}-${index}`;

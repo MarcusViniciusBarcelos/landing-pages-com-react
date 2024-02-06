@@ -8,7 +8,7 @@ import { NavLinks } from '../NavLinks';
 import { LogoLink } from '../LogoLink';
 import { useEffect } from 'react';
 
-export const Menu = ({ links = [], logoData }) => {
+export const Menu = ({ links = [], logo }) => {
   const [visible, setVisible] = useState(true);
   const [buttonHidden, setButtonHidden] = useState(true);
 
@@ -75,7 +75,7 @@ export const Menu = ({ links = [], logoData }) => {
           onClick={() => setVisible(false)}
           role="navigation"
         >
-          <LogoLink {...logoData} />
+          <LogoLink {...logo} />
           <NavLinks links={links} />
         </Styled.MenuContainer>
       </Styled.Container>
@@ -85,5 +85,5 @@ export const Menu = ({ links = [], logoData }) => {
 
 Menu.propTypes = {
   ...NavLinks.propTypes,
-  logoData: P.shape(LogoLink.propTypes),
+  logo: P.shape(LogoLink.propTypes),
 };
