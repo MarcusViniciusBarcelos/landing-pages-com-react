@@ -11,12 +11,17 @@ export const mapData = (pagesData = [{}]) => {
       menu = {},
     } = data;
 
+    const menuData = mapMenu(menu);
+
     return {
       footerHtml,
       slug,
       title,
       sections: mapSections(sections),
-      menu: mapMenu(menu),
+      menu: {
+        ...menuData,
+        links: menuData.links,
+      },
     };
   });
 };

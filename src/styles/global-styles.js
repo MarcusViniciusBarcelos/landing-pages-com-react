@@ -34,4 +34,9 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.secondaryColor};
     text-decoration: none;
   }
+
+  .table {
+    width: 100%;
+    overflow-y: auto;
+  }
 `;
