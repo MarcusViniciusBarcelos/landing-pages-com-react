@@ -24,11 +24,11 @@ const preview = {
 
 export const decorators = [
   (Story) => (
-    <ThemeProvider theme={ theme }>
+    <ThemeProvider theme={theme}>
       <Story />
       <GlobalStyles />
     </ThemeProvider>
-  )
+  ),
 ];
 
 export default preview;

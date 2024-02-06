@@ -1,232 +1,230 @@
 {
-    "data": {
-      "id": 1,
-      "attributes": {
-        "title": "Minha Pagina",
-        "slug": "minha-pagina",
-        "createdAt": "2023-11-06T17:04:14.305Z",
-        "updatedAt": "2023-11-06T17:05:00.265Z",
-        "publishedAt": "2023-11-06T17:05:00.198Z",
-        "footer_text": "Meu Footer tranquilo de poucas palavras",
-        "menu": {
+  "data": {
+    "id": 1,
+    "attributes": {
+      "title": "Minha Pagina",
+      "slug": "minha-pagina",
+      "createdAt": "2023-11-06T17:04:14.305Z",
+      "updatedAt": "2023-11-06T17:05:00.265Z",
+      "publishedAt": "2023-11-06T17:05:00.198Z",
+      "footer_text": "Meu Footer tranquilo de poucas palavras",
+      "menu": {
+        "id": 1,
+        "logo_link": "#home",
+        "logo_text": "Logos",
+        "logo": {
+          "data": {
+            "id": 5,
+            "attributes": {
+              "name": "computação.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 960,
+              "height": 933,
+              "formats": {
+                "small": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1699289758/small_computacao_9fe4654e51.png",
+                  "hash": "small_computacao_9fe4654e51",
+                  "mime": "image/png",
+                  "name": "small_computação.png",
+                  "path": null,
+                  "size": 99.74,
+                  "width": 500,
+                  "height": 486,
+                  "provider_metadata": {
+                    "public_id": "small_computacao_9fe4654e51",
+                    "resource_type": "image"
+                  }
+                },
+                "medium": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1699289758/medium_computacao_9fe4654e51.png",
+                  "hash": "medium_computacao_9fe4654e51",
+                  "mime": "image/png",
+                  "name": "medium_computação.png",
+                  "path": null,
+                  "size": 199.27,
+                  "width": 750,
+                  "height": 729,
+                  "provider_metadata": {
+                    "public_id": "medium_computacao_9fe4654e51",
+                    "resource_type": "image"
+                  }
+                },
+                "thumbnail": {
+                  "ext": ".png",
+                  "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1699289758/thumbnail_computacao_9fe4654e51.png",
+                  "hash": "thumbnail_computacao_9fe4654e51",
+                  "mime": "image/png",
+                  "name": "thumbnail_computação.png",
+                  "path": null,
+                  "size": 14.68,
+                  "width": 161,
+                  "height": 156,
+                  "provider_metadata": {
+                    "public_id": "thumbnail_computacao_9fe4654e51",
+                    "resource_type": "image"
+                  }
+                }
+              },
+              "hash": "computacao_9fe4654e51",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 80.72,
+              "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1699289758/computacao_9fe4654e51.png",
+              "previewUrl": null,
+              "provider": "cloudinary",
+              "provider_metadata": {
+                "public_id": "computacao_9fe4654e51",
+                "resource_type": "image"
+              },
+              "createdAt": "2023-11-06T16:56:00.096Z",
+              "updatedAt": "2023-11-06T16:56:00.096Z"
+            }
+          }
+        },
+        "menu_links": [
+          {
+            "id": 5,
+            "link_text": "intro",
+            "url": "#intro",
+            "open_in_new_tab": false
+          },
+          {
+            "id": 2,
+            "link_text": "top3",
+            "url": "##top3",
+            "open_in_new_tab": false
+          },
+          {
+            "id": 3,
+            "link_text": "gallery",
+            "url": "#gallery",
+            "open_in_new_tab": false
+          },
+          {
+            "id": 1,
+            "link_text": "pricing",
+            "url": "#pricing",
+            "open_in_new_tab": false
+          },
+          {
+            "id": 4,
+            "link_text": "contact",
+            "url": "#contact",
+            "open_in_new_tab": false
+          }
+        ]
+      },
+      "sections": [
+        {
           "id": 1,
-          "logo_link": "#home",
-          "logo_text": "Logos",
-          "logo": {
+          "__component": "section.section-two-columns",
+          "title": "MEU MODELO DE LANDING PAGE",
+          "description": "Meu modelo de estudo de landing page em html e css, para estudo de sintaxe e semantica",
+          "iamge": {
             "data": {
-              "id": 5,
+              "id": 4,
               "attributes": {
-                "name": "computação.png",
+                "name": "345302-original.jpg",
                 "alternativeText": null,
                 "caption": null,
-                "width": 960,
-                "height": 933,
+                "width": 640,
+                "height": 400,
                 "formats": {
                   "small": {
-                    "ext": ".png",
-                    "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1699289758/small_computacao_9fe4654e51.png",
-                    "hash": "small_computacao_9fe4654e51",
-                    "mime": "image/png",
-                    "name": "small_computação.png",
+                    "ext": ".jpg",
+                    "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1699276490/small_345302_original_5a8b2e6cd1.jpg",
+                    "hash": "small_345302_original_5a8b2e6cd1",
+                    "mime": "image/jpeg",
+                    "name": "small_345302-original.jpg",
                     "path": null,
-                    "size": 99.74,
+                    "size": 29.01,
                     "width": 500,
-                    "height": 486,
+                    "height": 313,
                     "provider_metadata": {
-                      "public_id": "small_computacao_9fe4654e51",
-                      "resource_type": "image"
-                    }
-                  },
-                  "medium": {
-                    "ext": ".png",
-                    "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1699289758/medium_computacao_9fe4654e51.png",
-                    "hash": "medium_computacao_9fe4654e51",
-                    "mime": "image/png",
-                    "name": "medium_computação.png",
-                    "path": null,
-                    "size": 199.27,
-                    "width": 750,
-                    "height": 729,
-                    "provider_metadata": {
-                      "public_id": "medium_computacao_9fe4654e51",
+                      "public_id": "small_345302_original_5a8b2e6cd1",
                       "resource_type": "image"
                     }
                   },
                   "thumbnail": {
-                    "ext": ".png",
-                    "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1699289758/thumbnail_computacao_9fe4654e51.png",
-                    "hash": "thumbnail_computacao_9fe4654e51",
-                    "mime": "image/png",
-                    "name": "thumbnail_computação.png",
+                    "ext": ".jpg",
+                    "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1699276490/thumbnail_345302_original_5a8b2e6cd1.jpg",
+                    "hash": "thumbnail_345302_original_5a8b2e6cd1",
+                    "mime": "image/jpeg",
+                    "name": "thumbnail_345302-original.jpg",
                     "path": null,
-                    "size": 14.68,
-                    "width": 161,
-                    "height": 156,
+                    "size": 10.13,
+                    "width": 245,
+                    "height": 153,
                     "provider_metadata": {
-                      "public_id": "thumbnail_computacao_9fe4654e51",
+                      "public_id": "thumbnail_345302_original_5a8b2e6cd1",
                       "resource_type": "image"
                     }
                   }
                 },
-                "hash": "computacao_9fe4654e51",
-                "ext": ".png",
-                "mime": "image/png",
-                "size": 80.72,
-                "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1699289758/computacao_9fe4654e51.png",
+                "hash": "345302_original_5a8b2e6cd1",
+                "ext": ".jpg",
+                "mime": "image/jpeg",
+                "size": 34.91,
+                "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1699276490/345302_original_5a8b2e6cd1.jpg",
                 "previewUrl": null,
                 "provider": "cloudinary",
                 "provider_metadata": {
-                  "public_id": "computacao_9fe4654e51",
+                  "public_id": "345302_original_5a8b2e6cd1",
                   "resource_type": "image"
                 },
-                "createdAt": "2023-11-06T16:56:00.096Z",
-                "updatedAt": "2023-11-06T16:56:00.096Z"
+                "createdAt": "2023-11-06T13:14:51.124Z",
+                "updatedAt": "2023-11-06T16:58:55.415Z"
               }
             }
           },
-          "menu_links": [
-            {
-              "id": 5,
-              "link_text": "intro",
-              "url": "#intro",
-              "open_in_new_tab": false
-            },
-            {
-              "id": 2,
-              "link_text": "top3",
-              "url": "##top3",
-              "open_in_new_tab": false
-            },
-            {
-              "id": 3,
-              "link_text": "gallery",
-              "url": "#gallery",
-              "open_in_new_tab": false
-            },
-            {
-              "id": 1,
-              "link_text": "pricing",
-              "url": "#pricing",
-              "open_in_new_tab": false
-            },
-            {
-              "id": 4,
-              "link_text": "contact",
-              "url": "#contact",
-              "open_in_new_tab": false
-            }
-          ]
-        },
-        "sections": [
-          {
+          "metadata": {
             "id": 1,
-            "__component": "section.section-two-columns",
-            "title": "MEU MODELO DE LANDING PAGE",
-            "description": "Meu modelo de estudo de landing page em html e css, para estudo de sintaxe e semantica",
-            "iamge": {
-              "data": {
-                "id": 4,
-                "attributes": {
-                  "name": "345302-original.jpg",
-                  "alternativeText": null,
-                  "caption": null,
-                  "width": 640,
-                  "height": 400,
-                  "formats": {
-                    "small": {
-                      "ext": ".jpg",
-                      "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1699276490/small_345302_original_5a8b2e6cd1.jpg",
-                      "hash": "small_345302_original_5a8b2e6cd1",
-                      "mime": "image/jpeg",
-                      "name": "small_345302-original.jpg",
-                      "path": null,
-                      "size": 29.01,
-                      "width": 500,
-                      "height": 313,
-                      "provider_metadata": {
-                        "public_id": "small_345302_original_5a8b2e6cd1",
-                        "resource_type": "image"
-                      }
-                    },
-                    "thumbnail": {
-                      "ext": ".jpg",
-                      "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1699276490/thumbnail_345302_original_5a8b2e6cd1.jpg",
-                      "hash": "thumbnail_345302_original_5a8b2e6cd1",
-                      "mime": "image/jpeg",
-                      "name": "thumbnail_345302-original.jpg",
-                      "path": null,
-                      "size": 10.13,
-                      "width": 245,
-                      "height": 153,
-                      "provider_metadata": {
-                        "public_id": "thumbnail_345302_original_5a8b2e6cd1",
-                        "resource_type": "image"
-                      }
-                    }
-                  },
-                  "hash": "345302_original_5a8b2e6cd1",
-                  "ext": ".jpg",
-                  "mime": "image/jpeg",
-                  "size": 34.91,
-                  "url": "https://res.cloudinary.com/dm5kvicsz/image/upload/v1699276490/345302_original_5a8b2e6cd1.jpg",
-                  "previewUrl": null,
-                  "provider": "cloudinary",
-                  "provider_metadata": {
-                    "public_id": "345302_original_5a8b2e6cd1",
-                    "resource_type": "image"
-                  },
-                  "createdAt": "2023-11-06T13:14:51.124Z",
-                  "updatedAt": "2023-11-06T16:58:55.415Z"
-                }
-              }
-            },
-            "metadata": {
-              "id": 1,
-              "name": "homes",
-              "section_id": "homes",
-              "background": true
-            }
-          },
-          {
-            "id": 1,
-            "__component": "section.section-grid",
-            "title": "TOP 3 PARAGRAFOS",
-            "description": "Meu modelo de estudo de landing page em html e css, para estudo de sintaxe e semantica\n\nMeu modelo de estudo de landing page em html e css, para estudo de sintaxe e semantica\n\nMeu modelo de estudo de landing page em html e css, para estudo de sintaxe e semantica",
-            "metadata": {
-              "id": 2,
-              "name": "intro",
-              "section_id": "intro",
-              "background": false
-            }
-          },
-          {
-            "id": 2,
-            "__component": "section.section-grid",
-            "title": "TOP 3 TOPICOS",
-            "description": "uma breve descrição sobre TOP 3 TOPICOS",
-            "metadata": {
-              "id": 3,
-              "name": "toptres",
-              "section_id": "toptres",
-              "background": true
-            }
-          },
-          {
-            "id": 3,
-            "__component": "section.section-grid",
-            "title": "GALERY",
-            "description": "uma breve descrição de GALERY com 30 caracteres",
-            "metadata": {
-              "id": 4,
-              "name": "gallery",
-              "section_id": "gallery",
-              "background": false
-            }
+            "name": "homes",
+            "section_id": "homes",
+            "background": true
           }
-        ]
-      }
-    },
-    "meta": {
-
+        },
+        {
+          "id": 1,
+          "__component": "section.section-grid",
+          "title": "TOP 3 PARAGRAFOS",
+          "description": "Meu modelo de estudo de landing page em html e css, para estudo de sintaxe e semantica\n\nMeu modelo de estudo de landing page em html e css, para estudo de sintaxe e semantica\n\nMeu modelo de estudo de landing page em html e css, para estudo de sintaxe e semantica",
+          "metadata": {
+            "id": 2,
+            "name": "intro",
+            "section_id": "intro",
+            "background": false
+          }
+        },
+        {
+          "id": 2,
+          "__component": "section.section-grid",
+          "title": "TOP 3 TOPICOS",
+          "description": "uma breve descrição sobre TOP 3 TOPICOS",
+          "metadata": {
+            "id": 3,
+            "name": "toptres",
+            "section_id": "toptres",
+            "background": true
+          }
+        },
+        {
+          "id": 3,
+          "__component": "section.section-grid",
+          "title": "GALERY",
+          "description": "uma breve descrição de GALERY com 30 caracteres",
+          "metadata": {
+            "id": 4,
+            "name": "gallery",
+            "section_id": "gallery",
+            "background": false
+          }
+        }
+      ]
     }
-  }
+  },
+  "meta": {}
+}
