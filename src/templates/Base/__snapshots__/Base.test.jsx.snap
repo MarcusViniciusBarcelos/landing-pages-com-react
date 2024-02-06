@@ -134,6 +134,7 @@ exports[`Base should render 1`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c23 {
@@ -389,6 +390,7 @@ exports[`Base should render 1`] = `
   >
     <div
       class="c10"
+      id="id-937.5409339594394"
     >
       <div
         class="c11 c12"
@@ -457,6 +459,7 @@ exports[`Base should render 1`] = `
     </div>
     <div
       class="c20"
+      id="id-421.20573024327524"
     >
       <div
         class="c11 c12"
@@ -525,6 +528,7 @@ exports[`Base should render 1`] = `
     </div>
     <div
       class="c10"
+      id="id-783.8197143258303"
     >
       <div
         class="c11 c12"
@@ -593,6 +597,7 @@ exports[`Base should render 1`] = `
     </div>
     <div
       class="c20"
+      id="id-591.7088035605556"
     >
       <div
         class="c11 c12"
@@ -661,6 +666,7 @@ exports[`Base should render 1`] = `
     </div>
     <div
       class="c10"
+      id="id-318.9231224652012"
     >
       <div
         class="c11 c12"

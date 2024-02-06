@@ -10,9 +10,6 @@ exports[`<GridTwoColum /> should render two column grid 1`] = `
 .c2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   gap: 3.2rem;
 }
@@ -21,24 +18,19 @@ exports[`<GridTwoColum /> should render two column grid 1`] = `
   margin-bottom: 4.0rem;
 }
 
-.c1 {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 3.2rem;
-}
-
 .c0 {
   background: #FFFFFF;
   color: #0A1128;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
+}
+
+.c1 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+  width: 100%;
 }
 
 .c6 {
@@ -67,6 +59,7 @@ exports[`<GridTwoColum /> should render two column grid 1`] = `
 <div>
   <div
     class="c0"
+    id="id-288.4618294122332"
   >
     <div
       class="c1"
