@@ -37,6 +37,20 @@ function Home() {
     load();
   }, [location]);
 
+  useEffect(() => {
+    if (data !== undefined) {
+      document.title = 'pagina não encontrada';
+    }
+
+    if (data && !data.slug) {
+      document.title = 'Carregando...';
+    }
+
+    if (data && data.title) {
+      document.title = data.title;
+    }
+  }, [data]);
+
   if (data === undefined) {
     return <PageNotFound />;
   }
