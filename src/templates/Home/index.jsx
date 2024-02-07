@@ -21,7 +21,7 @@ function Home() {
     const load = async () => {
       try {
         const apiData = await fetch(
-          `http://localhost:1337/api/pages/${id}?populate=deep`,
+          `https://landing-pages-curso-9cdf686368d0.herokuapp.com/api/pages/${id}?populate=deep`,
         );
         const data = await apiData.json();
         const json = Object.values(data);
