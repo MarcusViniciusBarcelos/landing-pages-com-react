@@ -2,10 +2,11 @@ export const mapMenu = (menu = {}) => {
   const {
     open_in_new_tab: newTab = false,
     logo_text: text = '',
-    logo: { url: srcImg = '' } = '',
     logo_link: link = '',
     menu_links = [],
   } = menu;
+
+  const srcImg = menu?.logo?.data?.attributes?.url || '';
 
   return {
     newTab,

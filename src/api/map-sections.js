@@ -1,9 +1,4 @@
 export const mapSections = (sections = []) => {
-  if (!Array.isArray(sections)) {
-    console.error('Invalid input: sections must be an array');
-    return [];
-  }
-
   return sections.map((section) => {
     if (section.__component === 'section.section-two-columns') {
       return mapSectionTwoColumns(section);
@@ -17,10 +12,12 @@ export const mapSections = (sections = []) => {
       if (text_grid.length > 0) {
         return mapTextGrid(section);
       }
+
       if (image_grid.length > 0) {
         return mapImageGrid(section);
       }
     }
+
     return section;
   });
 };
@@ -30,9 +27,11 @@ export const mapSectionTwoColumns = (section = {}) => {
     __component: component = '',
     title = '',
     description: text = '',
-    image: { url: srcImg = '' } = '',
     metadata: { background = false, section_id: sectionId = '' } = false,
   } = section;
+
+  const srcImg = section?.image?.data?.attributes?.url || '';
+
   return {
     component,
     title,
@@ -50,29 +49,30 @@ export const mapSectionContent = (section = {}) => {
     content: html = '',
     metadata: { background = false, section_id: sectionId = '' } = false,
   } = section;
+
   return {
     component,
     title,
-    html,
     background,
     sectionId,
+    html,
   };
 };
 
 export const mapTextGrid = (section = {}) => {
   const {
-    __component: component = '',
     title = '',
     description = '',
     metadata: { background = false, section_id: sectionId = '' } = false,
     text_grid: grid = [],
   } = section;
+
   return {
     component: 'section.section-grid-text',
     title,
-    description,
     background,
     sectionId,
+    description,
     grid: grid.map((text) => {
       const { title = '', description = '' } = text;
       return {
@@ -85,18 +85,18 @@ export const mapTextGrid = (section = {}) => {
 
 export const mapImageGrid = (section = {}) => {
   const {
-    __component: component = '',
     title = '',
     description = '',
     metadata: { background = false, section_id: sectionId = '' } = false,
     image_grid: grid = [],
   } = section;
+
   return {
     component: 'section.section-grid-image',
     title,
-    description,
     background,
     sectionId,
+    description,
     grid: grid.map((img) => {
       const {
         image: { url: srcImg = '', alternativeText: altText = '' } = '',

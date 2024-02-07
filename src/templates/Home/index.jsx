@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Base } from '../Base';
 import { mockBase } from '../Base/mock';
@@ -13,28 +13,34 @@ import { GridImage } from '../../components/GridImage';
 
 function Home() {
   const [data, setData] = useState([]);
+  const isMounted = useRef(true);
   const location = useLocation();
 
   useEffect(() => {
-    const pathname = location.pathname.replace(/[^a-z0-9-_]/gi, '');
-    const id = pathname ? pathname : 1;
     const load = async () => {
+      const pathname = location.pathname.replace(/[^a-z0-9-_]/gi, '');
+      const slug = pathname ? pathname : 'minha-pagina';
       try {
-        const apiData = await fetch(
-          `https://landing-pages-curso-9cdf686368d0.herokuapp.com/api/pages/${id}?populate=deep`,
+        const data = await fetch(
+          `https://landing-pages-curso-9cdf686368d0.herokuapp.com/api/pages/?filters[slug]=${slug}&populate=deep`,
         );
-        const data = await apiData.json();
-        const json = Object.values(data);
-        const { attributes } = await json[0];
+        const json = await data.json();
+        const { attributes } = json.data[0];
         const pageData = mapData([attributes]);
+        setData(() => pageData[0]);
         console.log(pageData);
-        setData(pageData[0]);
-      } catch (e) {
+      } catch {
         setData(undefined);
       }
     };
 
-    load();
+    if (isMounted.current === true) {
+      load();
+    }
+
+    return () => {
+      isMounted.current = false;
+    };
   }, [location]);
 
   useEffect(() => {
@@ -59,10 +65,14 @@ function Home() {
     return <Loading />;
   }
   const { menu, sections, footerHtml, slug } = data;
-  const { menu_links, logo } = menu;
+  const { menu_links, srcImg, text, link } = menu;
 
   return (
-    <Base links={menu_links} logoData={logo} footerHtml={footerHtml}>
+    <Base
+      links={menu_links}
+      logoData={{ text, link, srcImg }}
+      footerHtml={footerHtml}
+    >
       {sections.map((section, index) => {
         const { component } = section;
         const key = `${slug}-${index}`;
